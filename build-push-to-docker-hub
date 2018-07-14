@@ -1,0 +1,4 @@
+name=tuddman/graalvm
+
+docker build -t $name:latest .
+docker push $name
