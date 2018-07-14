@@ -2,4 +2,4 @@
   (:gen-class))
 
 (defn -main []
-  (println "hello graalVM " (clojure-version)))
+  (println "hello graalVM. Running clojure " (clojure-version) " :-)" ))
