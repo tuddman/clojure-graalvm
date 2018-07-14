@@ -30,17 +30,23 @@ Bye for now!
 # ./pull-in-clojure.sh
 ```
 
-### build the docker images
+## build the docker images
+
+### build base GraalVM docker image
 
 ```sh
 cd <basedir>
-./get-graalvm.sh
 docker build -t tuddman/graalvm:latest .
-cd hello
+```
+
+### build base GraalVM docker image
+
+```sh
+cd example/hello
 docker build -t hello-clj-on-graalvm .
 ```
 
-### see how much smaller it is
+### see how much smaller the compiled binary is
 
 ```sh
 $ docker inspect hello-clj-on-graalvm | jq .[0].Size
