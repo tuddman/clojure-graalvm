@@ -23,14 +23,21 @@ user=> (require 'com.example.hello)
 nil
 user=> (compile 'com.example.hello)
 com.example.hello
-
 user=> quit
 Bye for now!
 
 # ./pull-in-clojure.sh
 ```
 
-## build the docker images
+## get the docker image
+
+```sh
+docker pull tuddman/graalvm:latest
+```
+
+_or_
+
+## build the docker images from source
 
 ### build base GraalVM docker image
 
@@ -39,7 +46,7 @@ cd <basedir>
 docker build -t tuddman/graalvm:latest .
 ```
 
-### build base GraalVM docker image
+### build clojure example docker image
 
 ```sh
 cd example/hello
