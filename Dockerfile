@@ -1,7 +1,7 @@
 FROM oraclelinux:7-slim
 MAINTAINER tuddman
 
-ENV GRAAL_VERSION=1.0.0-rc4
+ENV GRAAL_VERSION=1.0.0-rc12
 ENV GRAALVM_URL=https://github.com/oracle/graal/releases/download/vm-${GRAAL_VERSION}/graalvm-ce-${GRAAL_VERSION}-linux-amd64.tar.gz \
     GRAALVM_PKG=graalvm-ce-${GRAAL_VERSION}-linux-amd64.tar.gz \
     GRAALVM_HOME=/usr/graalvm-ce-${GRAAL_VERSION}
